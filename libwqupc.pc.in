@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: @PACKAGE_NAME@
+Description: Weighted Quick-Union with Path Compression in C++
+Url: https://github.com/jitsu-net/wqupc
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -l@PACKAGE_BASE_LIBNAME@@PACKAGE_MAJOR_VERSION@
+Cflags: -I${includedir}/@PACKAGE_NAME@-@PACKAGE_VERSION@
+
