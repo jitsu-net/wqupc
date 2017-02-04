@@ -15,6 +15,7 @@ public:
     ~WQUPC() = default;
     bool connected(std::size_t p, std::size_t q);
     void join(std::size_t p, std::size_t q);
+    std::size_t size() const;
 private:
     std::size_t root(std::size_t i);
     std::vector<std::size_t> id;

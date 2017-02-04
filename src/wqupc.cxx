@@ -49,3 +49,9 @@ std::size_t WQUPC::root(std::size_t i)
     }
     return i;
 }
+
+std::size_t WQUPC::size() const
+{
+    return id.size();
+}
+

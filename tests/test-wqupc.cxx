@@ -39,3 +39,13 @@ TEST(wqupc, join2)
     EXPECT_FALSE(wqupc.connected(3,7));
     EXPECT_FALSE(wqupc.connected(1,7));
 }
+
+TEST(wqupc, size)
+{
+    for (std::size_t sz = 0; sz < 73; ++sz)
+    {
+        WQUPC wqupc(sz);
+        EXPECT_EQ(sz, wqupc.size());
+    }
+}
+
